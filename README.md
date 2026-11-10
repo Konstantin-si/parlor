@@ -1,8 +1,8 @@
 # Parlor
 
-Phone-driven browser for Android TV and Google TV. The television renders the page. The phone is the address bar, keyboard, trackpad, and tab list. This repository is the plan, the checklist, and the agent skills. There is no application code yet.
+Phone-driven browser for Android TV and Google TV. You browse on the phone. The television repeats the same steps, including play and fullscreen, then keeps the film when the phone is put away. This repository is the plan, the checklist, and the agent skills. There is no application code yet.
 
-Parlor — браузер для телевизора и приставки, которым управляют с телефона по домашней сети. Страница открывается на телевизоре. Телефон не дублирует её вторым движком: он водит уже открытую страницу.
+Parlor — браузер для телевизора и приставки. Навигация идёт на телефоне обычными касаниями. Телевизор повторяет шаги у себя: тот же адрес, та же кнопка, Play и полный экран. Свернули телефон — кино остаётся на телевизоре. «Оставить в телефоне» останавливает телевизор.
 
 ## Зачем
 
@@ -13,7 +13,7 @@ Parlor — браузер для телевизора и приставки, к�
 ## Что уже решено
 
 - Движок первой версии — системный Android WebView. Это Chromium (Blink), тот же класс движка, что и Chrome. Свой форк Chromium не собираем, пока живые приставки не покажут, что WebView не справляется.
-- Сессия страницы живёт на телевизоре. Телефон ею управляет.
+- Основной режим — «С телефона»: смотрят в телефон, телевизор повторяет шаги по элементам, а не по координатам экрана. Разный масштаб полный экран видео не ломает.
 - Основной канал — Wi-Fi в локальной сети. Bluetooth — поиск и запасной канал коротких команд, когда роутер запрещает устройствам видеть друг друга.
 - Кода приложения в этом репозитории пока нет.
 
